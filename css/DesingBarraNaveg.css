@@ -1,0 +1,27 @@
+#navbarTogglerDemo01{
+    background-color: #013d69;
+
+}
+
+#navbarTogglerDemo01{
+    color: white;
+    text-decoration: double;
+}
+
+#navbarTogglerDemo01 a:hover {
+    background-color:#014576;
+    color: white;
+}
+#navbarTogglerDemo01 a.active:hover {
+    background-color: #014576;
+    color: white;
+}
+
+#login_inic{
+    color: white;
+    text-decoration: double;
+}
+#login_inic a:hover  {
+    background-color: #014576;
+    color: white;
+}

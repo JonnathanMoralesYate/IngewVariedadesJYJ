@@ -1,0 +1,135 @@
+body{
+    background-color:  #0a1527  ; 
+}
+
+/* Categorías */
+.scrollspy-example {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Botón de Categorías */
+.btn-group button {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Tarjetas de Productos */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .scrollspy-example {
+        max-height: 400px;
+    }
+    .card {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollspy-example {
+        max-height: 300px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+/* Ajustes generales */
+.carousel-item {
+    padding: 20px;
+}
+
+/* Ajuste de las tarjetas */
+.card {
+    max-width: 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* Ajusta el espaciado entre tarjetas */
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reduce el espacio entre tarjetas */
+.card {
+    margin: 5px; 
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .row-cols-md-2 .col {
+        flex: 0 0 48%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .row-cols-1 .col {
+        flex: 0 0 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column !important; 
+    }
+    .col-12 {
+        width: 100% !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollspy-example {
+        max-height: 300px; 
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #productos-container {
+        margin-top: 20px !important;
+    }
+}
+

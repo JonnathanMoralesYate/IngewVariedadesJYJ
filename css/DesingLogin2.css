@@ -1,0 +1,174 @@
+/* Contenedor del modal de login */
+.contenedor_loginG {
+    display: none;
+    position: fixed;
+    right: 35%;
+    top: 30%;
+    width: 30%;
+    max-width: 400px;
+    aspect-ratio: 1.8;
+    text-align: center;
+    background-color: #0a1527;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(99, 97, 97, 0.364);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 9999;
+}
+
+/* Título del login */
+h2 {
+    color: white;
+}
+
+/* Formulario */
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.contenedor-login {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Campo de formulario */
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Estilo base para inputs */
+.campo input[type="text"],
+.campo input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Contenedor del input + ícono de ojo */
+.input-con-icono {
+    position: relative;
+    width: 100%;
+}
+
+.input-con-icono input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 40px 10px 10px; /* espacio a la derecha para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.icono-ojo {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Botón Iniciar Sesión */
+.boton-iniciar {
+    width: 100%;
+    height: 50px;
+    background-color: #10213d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-iniciar:hover {
+    background-color: #081935;
+}
+
+/* Botón de cerrar (X) */
+#cerrarL {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 🔹 Media Queries para pantallas medianas */
+@media (max-width: 768px) {
+    .contenedor_loginG {
+        right: 10%;
+        width: 80%;
+        max-width: 90%;
+    }
+}
+
+/* 🔹 Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contenedor_loginG {
+        width: 90%;
+        right: 5%;
+        top: 20%;
+        padding: 15px;
+    }
+
+    #cerrarL {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+.input-con-icono {
+  position: relative;
+  width: 100%;
+}
+
+.input-con-icono input {
+  width: 100%;
+  height: 40px;
+  padding-right: 40px; /* espacio para el botón */
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Botón del ojo dentro del input */
+.icono-ojo {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

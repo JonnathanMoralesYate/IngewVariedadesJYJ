@@ -1,0 +1,79 @@
+/* Posiciona los submenús correctamente */
+.dropdown-menu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0.1rem;
+}
+
+/* Ajuste para hover si se desea habilitar */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Eliminar el fondo azul al hacer clic */
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: transparent !important;
+    color: inherit !important;
+    outline: none !important;
+
+}
+
+/* Opcional: Eliminar cualquier cambio de color en hover */
+.dropdown-item:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+/* Quitar el hover azul en select */
+select.form-select:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+#resultado {
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#resultado1 {
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#myChart,
+#myChart1,
+#myChart2,
+#myChart3 {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Contenedor de la paginación */
+#paginacion-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-thick {
+  text-shadow: 1px 0 0 currentColor, 0 1px 0 currentColor,
+                -1px 0 0 currentColor, 0 -1px 0 currentColor;
+}
